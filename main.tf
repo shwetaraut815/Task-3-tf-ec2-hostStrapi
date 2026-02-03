@@ -9,3 +9,7 @@ module "vpc" {
 module "sg" {
   source = "./modules/sg"
 }
+
+module "ec2" {
+  source = "./modules/ec2"
+}
