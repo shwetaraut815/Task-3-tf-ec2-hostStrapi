@@ -16,7 +16,7 @@ resource "aws_internet_gateway" "igw" {
 resource "aws_subnet" "public" {
     vpc_id = aws_vpc.test.id
     cidr_block = var.public_cidr
-    availability_zone =  us-east-1b
+    availability_zone =  "us-east-1b"
     tags = {
         Name = "public-automation"
     }
@@ -25,7 +25,7 @@ resource "aws_subnet" "public" {
 resource "aws_subnet" "private" {
     vpc_id = aws_vpc.test.id
     cidr_block = var.private_cidr
-    availability_zone = us-east-1a
+    availability_zone = "us-east-1a"
     tags = {
         Name = "private-subnet"
     }
