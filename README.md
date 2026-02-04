@@ -4,6 +4,9 @@ Provision an EC2 instance using a Terraform module, connect using a private key 
 
 *Terraform module structure*
 
+<img width="572" height="643" alt="image" src="https://github.com/user-attachments/assets/3415e52c-a548-4536-b745-496b479a03ee" />
+
+
 AWS-Terraform-Task2/
 │
 ├── provider.tf          # AWS provider configuration (region)
